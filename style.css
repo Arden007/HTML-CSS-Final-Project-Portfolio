@@ -7,7 +7,7 @@
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: teal;
+  background-color:black;
   /* overflow:hidden; */
 }
 
@@ -22,15 +22,30 @@
   padding: 50px 40px 40px;
   text-align: center;
   background-size: cover;
-  background-color: teal;
+  background-color: white;
   opacity: 0.7;
   height: 100vh; /*setting a height will allow the bckgroung to auto cover everything within the section*/
 }
 
-.land-head {
+.head {
   font-size: 200px;
   font-weight: bolder;
   margin-top: 250px;
+  color:black;
+}
+
+.sub-head{
+  font-weight:bold;
+  margin-bottom: 30px;
+  color: red;
+}
+
+.btn-About{
+  border-radius: 15px;
+  background-color:black;
+  width: 150px;
+  height: 50px;
+  text-align: center;
 }
 /* landing page content */
 
@@ -40,8 +55,35 @@
   padding: 50px 40px 40px;
   text-align: center;
   background-size: cover;
-  background-color: blue;
+  background-color: white;
   opacity: 0.7;
+}
+
+.About-head{
+  font-size: 100px;
+  font-weight: bolder;
+  margin-top: 15px;
+  color: black;
+}
+
+.About-sub{
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+}
+.carousel-control-next{
+  margin: -100px;
+}
+
+.carousel-control-prev{
+  margin: -100px;
+}
+.carousel-control-prev-icon{
+  background-color: red;
+}
+
+.carousel-control-next-icon{
+  background-color: red;
 }
 /* About page content */
 
@@ -51,7 +93,7 @@
   padding: 50px 40px 40px;
   text-align: center;
   background-size: cover;
-  background-color: yellow;
+  background-color: white;
   opacity: 0.7;
 }
 
@@ -61,8 +103,8 @@
   }
   
   /* Set a background color */
-  body {
-    background-color: #474e5d;
+  .timeline {
+    background-color: white;
     font-family: Helvetica, sans-serif;
   }
   
@@ -78,7 +120,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: black;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -86,24 +128,28 @@
   }
   
   /* Container around content */
-  .container {
+  .timeline-container {
     padding: 10px 40px;
     position: relative;
-    background-color: inherit;
     width: 50%;
   }
   
+  .timeline-container .content{
+    
+    background-color: red;
+  }
+  
   /* The circles on the timeline */
-  .container::after {
+  .timeline-container::after{
     content: '';
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
+    right: -15px;
+    background-color: black;
+    border: 4px solid red;
     top: 15px;
-    border-radius: 50%;
+    border-radius: 100%;
     z-index: 1;
   }
   
@@ -147,7 +193,7 @@
   
   /* Fix the circle for containers on the right side */
   .right::after {
-    left: -16px;
+    left: -12px;
   }
   
   /* The actual content */
@@ -175,9 +221,9 @@
   /* Make sure that all arrows are pointing leftwards */
     .container::before {
       left: 60px;
-      border: medium solid white;
+      border: medium solid red;
       border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
+      border-color: transparent black transparent transparent;
     }
   
   /* Make sure all circles are at the same spot */
@@ -198,7 +244,43 @@
     padding: 50px 40px 40px;
     text-align: center;
     background-size: cover;
-    background-color:red;
+    background-color:white;
     opacity: 0.7;
   }
   /* Project page content */
+
+  /* Contact Section */
+  .Contact {
+    margin-left: 290px;
+    padding: 50px 40px 40px;
+    text-align: center;
+    background-size: cover;
+    background-color: white;
+    opacity: 0.7;
+    width: 100%;
+  }
+  /* Contact Section */
+
+  /* Testimonial section */
+  .Testimonial {
+    margin-left: 290px;
+    padding: 50px 40px 40px;
+    text-align: center;
+    background-size: cover;
+    background-color: white;
+    opacity: 0.7;
+    width: 100%;
+  }
+  /* Testimonial section */
+
+  /* footer section */
+  .Footer {
+    margin-left: 290px;
+    padding: 50px 40px 40px;
+    text-align: center;
+    background-size: cover;
+    background-color:white;
+    opacity: 0.7;
+    width: 100%;
+  }
+  /* footer section */
